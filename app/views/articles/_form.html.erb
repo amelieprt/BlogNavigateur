@@ -1,3 +1,20 @@
+<style>
+html *{
+  background-color: black;
+}
+label{
+  color:white;
+  margin-top:20px
+}
+textarea, input{
+  background-color: white;
+  width: 60vw;
+}
+
+</style>
+
+<div style="margin-left:60px">
+
 <%= form_with(model: article) do |form| %>
   <% if article.errors.any? %>
     <div style="color: red">
@@ -10,7 +27,7 @@
       </ul>
     </div>
   <% end %>
-<div class="m-4">
+
   <div>
     <%= form.label :browser, style: "display: block" %>
     <%= form.text_field :browser %>
@@ -18,7 +35,7 @@
 
   <div>
     <%= form.label :hat, style: "display: block" %>
-    <%= form.text_area :hat %>
+    <%= form.text_field :hat %>
   </div>
 
   <div>
@@ -36,8 +53,9 @@
     <%= form.text_area :image %>
   </div>
 
-  <div class="button-link w-22 m-4 p-3 rounded-pill btn btn-warning text-center text-decoration-none">
+  <div style="margin-top: 50px; margin-bottom: 50px;">
     <%= form.submit %>
   </div>
-</div>
 <% end %>
+
+</div>
