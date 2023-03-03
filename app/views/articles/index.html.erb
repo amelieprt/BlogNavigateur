@@ -1,40 +1,36 @@
-
-
 <style>
 .button-link a{
   text-decoration:none;
-  color:black;
+  color:white;
   font-weight:bold;
 }
-.body{
+html,body
+{
   background-color:black;
+  color:white;
 }
+
 </style>
 <p style="color: green"><%= notice %></p>
 
 
 
-<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+<div class="d-flex flex-wrap  justify-content-lg-start" >
+        <a href="/" class="d-flex  mb-2 mb-lg-0 text-white text-decoration-none">
           <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        <img src="https://cdn.discordapp.com/attachments/1016684817817018439/1081165769343254558/logo_medieval.png" style="width:100px">
         </a>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><img src"https://cdn.discordapp.com/attachments/1016684817817018439/1081153786803912704/logo_medieval.png" alt"Logo"></li>
-        </ul>
+      </div>
 
-
-      
 
     </div>
-    <div class="m-4">
-      <h1>Articles</h1>
-    </div>
+      <h1 style="font-family: 'Brush Script MT', cursive; font-size:100px; margin-top: 100px; margin-left:120px">MATACALL</h1>
 
-<div id="articles" class="d-flex flex-wrap">
+<img src="https://cdn.discordapp.com/attachments/1016684817817018439/1081213642088919060/logo_medieval22-removebg-preview.png" style="float: right; width:20vw; margin-top:100px"> 
+<div id="articles" class="d-flex flex-wrap" style="margin-left:60px">
   <% @articles.each do |article| %>
-  <div class="card w-25 m-4 d-flex flex-column justify-content-between" >
+  <div class="card w-25 m-4 d-flex flex-column justify-content-between bg-dark"  style="border: 20px solid; border-image: url('https://cdn.discordapp.com/attachments/1016684817817018439/1081206253612716055/cadre-removebg-preview.png') 25%; ">
     <img class="card-img-top" src=<%= article.image %>>
     <div class="card-body">
   <h1 class="card-title">
@@ -55,5 +51,5 @@
 
 </div>
 <div class="button-link w-22 m-4 p-3 rounded-pill btn btn-warning text-center text-decoration-none">
-  <%= link_to "New article", new_article_path %>
+<%= link_to "New article", new_article_path %>
 </div>
