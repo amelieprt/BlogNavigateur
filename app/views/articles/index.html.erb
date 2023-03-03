@@ -29,7 +29,7 @@
     </div>
       <h1>Articles</h1>
 
-<div id="articles" class="d-flex ">
+<div id="articles" class="d-flex-wrap">
   <% @articles.each do |article| %>
   <div class="card w-25 m-4 d-flex flex-column justify-content-between" >
     <img class="card-img-top" src=<%= article.image %>>
@@ -42,7 +42,7 @@
     <%= article.hat %>
   </p>
 
-    <p class="button-link w-25 p-1 rounded-pill btn btn-warning text-dark text-center text-decoration-none">
+    <p class="button-link w-50 p-1 rounded-pill btn btn-warning text-center text-decoration-none">
       <%= link_to "Show this article", article %>
     </p>
   </div>
