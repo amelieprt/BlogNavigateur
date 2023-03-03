@@ -1,9 +1,24 @@
-<h1>New article</h1>
+<style>
+.rounded-pill a{background: none;
+text-decoration:none;
+color:black}
+</style>
+
+<a href="/" class="d-flex  mb-2 mb-lg-0 text-white text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        <img src="https://cdn.discordapp.com/attachments/1016684817817018439/1081165769343254558/logo_medieval.png" style="width:100px">
+        </a>
+
+<h1 style="color: white; margin-left: 120px; margin-top: 50px">New article</h1>
 
 <%= render "form", article: @article %>
+<div class="bg-black" style="padding-bottom: 50px; padding-left: 60px">
 
+ 
 <br>
-
-<div>
+<p class="button-link  p-1 rounded-pill btn btn-warning text-center text-decoration-none" style="width: 150px; margin-right:20px">
+ 
   <%= link_to "Back to articles", articles_path %>
+
+</p>
 </div>
