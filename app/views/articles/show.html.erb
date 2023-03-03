@@ -1,8 +1,9 @@
-<p style="color: green"><%= notice %></p>
+
+<p style="color:lime; padding:0px; margin:0px;"><%= notice %></p>
 
 <%= render @article %>
 
-<div>
+<div class="bg-black" style="padding-bottom: 50px; padding-left: 60px">
   <%= link_to "Edit this article", edit_article_path(@article) %> |
   <%= link_to "Back to articles", articles_path %>
 
