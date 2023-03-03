@@ -1,11 +1,27 @@
+<style>
+.rounded-pill a{background: none;
+text-decoration:none;
+color:black}
+.rounded-pill button{ background:none;
+border:none}
+</style>
 
 <p style="color:lime; padding:0px; margin:0px;"><%= notice %></p>
 
 <%= render @article %>
 
 <div class="bg-black" style="padding-bottom: 50px; padding-left: 60px">
-  <%= link_to "Edit this article", edit_article_path(@article) %> |
+<p class="button-link  p-1 rounded-pill btn btn-warning text-center text-decoration-none" style="width: 150px; margin-right:20px">
+ 
+  <%= link_to "Edit this article", edit_article_path(@article) %>
+ </p>
+ <p class="button-link  p-1 rounded-pill btn btn-warning text-center text-decoration-none" style="width: 150px; margin-right:20px">
+ 
   <%= link_to "Back to articles", articles_path %>
+</p>
+<div class="button-link  p-1 rounded-pill btn btn-warning text-center text-decoration-none" style="width: 150px; margin-right:20px">
+ 
 
   <%= button_to "Destroy this article", @article, method: :delete %>
+</div>
 </div>
