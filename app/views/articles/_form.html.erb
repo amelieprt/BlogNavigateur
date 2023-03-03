@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+<div class="pl-3">
   <div>
     <%= form.label :browser, style: "display: block" %>
     <%= form.text_field :browser %>
@@ -36,7 +36,8 @@
     <%= form.text_area :image %>
   </div>
 
-  <div>
+  <div class="button-link w-22 m-4 p-3 rounded-pill btn btn-warning text-center text-decoration-none">
     <%= form.submit %>
   </div>
+</div>
 <% end %>
