@@ -1,4 +1,7 @@
-<div id="<%= dom_id article %>">
+<div class="card" style="width: 18rem;">
+
+<div  id="<%= dom_id article %>">
+<div class="card-body">
   <h1>
     <%= article.browser %>
   </h1>
@@ -16,8 +19,16 @@
     <strong>Points negatifs : </strong>
     <%= article.con %>
   </p>
+  </div>
 
-  <img src=<%= article.image %>>
+  <img class="card-img-top" src=<%= article.image %>>
 
 
 </div>
+
+#   <div class="card-body">
+#     <h5 class="card-title">Card title</h5>
+#     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+#     <a href="#" class="btn btn-primary">Go somewhere</a>
+#   </div>
+# </div>
